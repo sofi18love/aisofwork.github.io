@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AIFOSWORK</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel="stylesheet" href="TrabajoF-form.css">
+</head>
+<body>
+    <a href="/TrabajoF.html"><button class="button">Volver</button></a>
+    <div class="container">
+        <div class="title">
+            <p>Registro</p>
+        </div>
+<!--action="conectarEnvio.php" no me deja el dominio subir php-->
+        <form  method="get">
+            <div class="user_details">
+                <div class="input_box">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" id="nom" name="nombre" placeholder="Escribe tus nombre..." required>
+                </div>
+                <div class="input_box">
+                    <label for="ape">Apellidos:</label>
+                    <input type="text" id="ape" name="apellido" placeholder="Escribe tus apellidos..." required>
+                </div>
+                <div class="input_box">
+                    <label for="email">Email</label>
+                    <input type="email" id="ema" name="email" placeholder="Escribe tu email..." required>
+                </div>
+                <div class="input_box">
+                    <label for="celular">Numero Celular:</label>
+                    <input type="number" id="num" name="numero" placeholder="Escribe tu numero" required>
+                </div>
+                <div class="input_box">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="eda" name="edad" placeholder="Escribe tu edad.." required>
+                </div>
+                <div class="input_box">
+                    <label for="Pass">Contrasena:</label>
+                    <input type="password" id="Pass" placeholder="Escribir la contrasena" required>
+                </div>
+            </div>
+            <div class="gender">
+                <span class="gender_title">Sexo</span>
+                <input type="radio" name="sexo" id="radio_1">
+                <input type="radio" name="sexo" id="radio_2">
+                <input type="radio" name="sexo" id="radio_3">
+
+                <div class="category">
+                    <label for="radio_1">
+                        <span class="dot one"></span>
+                        <span>Masculino</span>
+                    </label>
+                    <label for="radio_2">
+                        <span class="dot two"></span>
+                        <span>Femenino</span>
+                    </label>
+                    <label for="radio_3">
+                        <span class="dot three"></span>
+                        <span>Prefiero no decirlo</span>
+                    </label>
+                </div>
+            </div>
+            <div class="reg_btn">
+                <input type="submit" name="registrarse" id="boton1" value="Registrar">
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('boton1').onclick = function(){
+            alert('Formulario enviado exitosamente! ');
+        }
+    </script>
+</body>
+</html>

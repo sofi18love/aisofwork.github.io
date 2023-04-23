@@ -1,0 +1,165 @@
+
+.slider-frame {
+	max-width: 1280px;
+    width: 100%;
+    height: auto;
+	margin:50px auto 0;
+    margin-left: 20px;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+  border-radius: 20px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+/*slider-fin*/
+/*segundo slider de testimonio*/
+.container{
+  max-width: 1280px;
+  margin-top: 3em;
+  position: static;
+  background: rgb(236, 210, 235);
+  text-align: center;
+  padding: 3em 0;
+  overflow: hidden;
+}
+.container h2{
+  font-size: 38px;
+  font-weight: 100;
+  color: rgb(125, 0, 241);
+}
+.container hr{
+  width: 100%;
+  height: 4px;
+  border: none;
+  background: rgba(1, 172, 224, 0.822);
+  margin-top: -50px;
+}
+.container .slides{
+  width: 400%;
+  left: 0;
+  padding-left: 0;
+  padding-top: 28px;
+  overflow: hidden;
+  list-style: none;
+  position: static;
+  transition: all -8s cubic-bezier(1,0,0,1);
+}
+.slides li{
+  width: 25%;
+  float: left;
+}
+.container li p{
+  margin-top: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.container li img{
+  width: 100px;
+  border-radius: 20%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.navigation{
+  display: block;
+  list-style: none;
+  text-align: center;
+  border: 40px;
+  position: absolute;
+  width: 104px;
+  left: 50%;
+  margin-left: -52px;
+}
+.container input{
+  display: none;
+}
+.navigation label{
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 0, 191);
+}
+#radio1:checked ~ .slides{
+  transform: translateX(0%);
+}
+#radio2:checked ~ .slides{
+  transform: translateX(-25%);
+}
+#radio3:checked ~ .slides{
+  transform: translateX(-50%);
+}
+.navigation label:hover{
+  cursor: pointer;
+}
+#radio:checked ~ .navigation label#radioSelect1,
+#radio:checked ~ .navigation label#radioSelect2,
+#radio:checked ~ .navigation label#radioSelect3{
+  background:#3838E3;
+}
+/*fin segundo sllider*/
+html {
+    line-height: 1.15; 
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  main {
+    display: block;
+  }
+  a {
+    background-color: transparent;
+  }
+  img {
+    border-style: none;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  table {
+    border-color: inherit; 
+    text-indent: 0;
+  }
+  button {
+    overflow: visible; 
+    text-transform: none; 
+  }
+  input {
+    overflow: visible;
+  }
